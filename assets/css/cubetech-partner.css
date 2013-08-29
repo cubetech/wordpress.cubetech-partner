@@ -1,0 +1,10 @@
+.cubetech-partner-container { margin-top: 30px; }
+.cubetech-partner { width: 100%; clear: both; padding-bottom: 30px; margin-bottom: 30px; overflow: hidden; display: table; color: #333333; border-bottom: 1px solid #f2f2f2; }
+.cubetech-partner:last-child { border: none; }
+.cubetech-partner > div { display: table-cell; vertical-align: middle; box-sizing: border-box; -moz-box-sizing: border-box; }
+.cubetech-partner-image { width: 28%; vertical-align: middle; }
+.cubetech-partner-content { width: 52%; }
+.cubetech-partner-content h3 { margin-top: 0; font-family:"Avenir Next LT W01 Bold"; font-size: 14px; }
+.cubetech-partner-link { width: 20%; text-align: right; }
+.cubetech-partner-link > a { display: inline-block; height: 50px; width: 104px; background: url(../img/cubetech-partner-button.png) no-repeat center center; text-align: center; line-height: 50px; color: white; text-transform: uppercase; font-size: 12px; }
+.cubetech-partner-link > a:hover { color: white; }
