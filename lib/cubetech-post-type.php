@@ -14,19 +14,24 @@ function cubetech_partner_create_post_type() {
 				'not_found' => __('Keine Partner gefunden.'),
 				'not_found_in_trash' => __('Keine Partner gefunden.')
 			),
-			'capability_type' => 'post',
-			'taxonomies' => false,
-			'public' => true,
-			'has_archive' => false,
-			'rewrite' => array('slug' => 'partner', 'with_front' => false),
-			'show_ui' => true,
-			'menu_position' => '20',
-			'menu_icon' => null,
-			'hierarchical' => true,
-			'supports' => array('title', 'editor', 'thumbnail')
+
+			'description' => _x('Partner', 'Description', 'wptheme-foundation'),
+			'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+			'hierarchical'        => true,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 21,
+			'can_export'          => true,
+			'has_archive'         => false,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'rewrite'			  => array( 'slug' => 'partner', 'with_front' => false ),
+			'menu_icon'			  => null,
 		)
 	);
-	flush_rewrite_rules();
 }
 add_action('init', 'cubetech_partner_create_post_type');
 ?>

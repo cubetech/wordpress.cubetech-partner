@@ -77,7 +77,7 @@ function save_cubetech_partner_meta($post_id) {
     global $cubetech_partner_meta_fields;
 	
 	// verify nonce
-	if (!wp_verify_nonce($_POST['cubetech_partner_meta_box_nonce'], basename(__FILE__))) 
+	if (empty($_POST['cubetech_partner_meta_box_nonce']) || !wp_verify_nonce($_POST['cubetech_partner_meta_box_nonce'], basename(__FILE__))) 
 		return $post_id;
 	// check autosave
 	if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
